@@ -6,15 +6,15 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      name: 'React'
+      bodyLength:125;
     };
   }
-
   render() {
     return (
       <div>
         <h1>Ergonomische werkplek</h1>
         <h3>Bereken nu een ergonomische hoogte voor je bureau en stoel</h3>
+        <input type="range" name="points" min="0" onChange={this.handleChange}value={this.state.bodyLength}  max="250"/>
       </div>
     );
   }
