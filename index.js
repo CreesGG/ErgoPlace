@@ -11,14 +11,14 @@ class App extends Component {
     };
   }
   onChange (event) {
-    this.setState({ bodyLength: event.target.value, deskHeigth: Math.floor(this.state.bodyLength * 2.43)})
+    this.setState({ bodyLength: event.target.value, deskHeigth: Math.floor(this.state.bodyLength / 2.43)})
   }
   render() {
     return (
       <div>
         <h1>Ergonomische werkplek</h1>
         <h3>Bereken nu een ergonomische hoogte voor je bureau en stoel</h3>
-        <p>{this.state.bodyLength} CM</p> <p>{this.state.deskHeigth}</p>
+        <p>{this.state.bodyLength} CM</p> <p>{this.state.deskHeigth} CM</p>
         <input type="range" name="points" min="150" onChange={event => this.onChange(event)} value={this.state.bodyLength} max="250"/>
       </div>
     );
