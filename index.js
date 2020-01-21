@@ -10,7 +10,9 @@ class App extends Component {
     };
   }
   handleChange(event) {
-  this.setState({bodyLength: event.target.value});
+    this.setState((state) => ({
+  bodyLength: event.target.value
+}));
 }
   render() {
     return (
