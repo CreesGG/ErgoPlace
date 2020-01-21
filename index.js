@@ -6,7 +6,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      bodyLength:200,
+      bodyLength:175,
       deskHeigth:0
     };
   }
@@ -19,7 +19,7 @@ class App extends Component {
         <h1>Ergonomische werkplek</h1>
         <h3>Bereken nu een ergonomische hoogte voor je bureau en stoel</h3>
         <p>{this.state.bodyLength} CM</p> <p>{this.state.deskHeigth} CM</p>
-        <input type="range" name="points" min="150" onChange={event => this.onChange(event)} value={this.state.bodyLength} max="250"/>
+        <input type="range" name="points" min="150" onChange={event => this.onChange(event)} value={this.state.bodyLength} max="200"/>
       </div>
     );
   }
