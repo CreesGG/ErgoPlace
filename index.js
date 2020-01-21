@@ -19,7 +19,7 @@ class App extends Component {
         <h1>Ergonomische werkplek</h1>
         <h3>Bereken nu een ergonomische hoogte voor je bureau en stoel</h3>
         <p>{this.state.bodyLength} CM</p> <p>{this.state.deskHeigth} CM</p>
-        <input type="range" name="points" min="150" onChange={event => this.onChange(event)} value={this.state.bodyLength} max="200"/>
+        <input className="slider" type="range" name="points" min="150" onChange={event => this.onChange(event)} value={this.state.bodyLength} max="200"/>
       </div>
     );
   }
