@@ -11,7 +11,7 @@ class App extends Component {
     };
   }
   onChange (event) {
-    this.setState({ bodyLength: event.target.value, deskHeigth: Math.floor(this.state.bodyLength / 2.4334)})
+    this.setState({ bodyLength: event.target.value, deskHeigth: Math.floor(this.state.bodyLength / 2.5)})
   }
   render() {
     return (
