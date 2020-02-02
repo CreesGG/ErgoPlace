@@ -7,12 +7,12 @@ class App extends Component {
     super();
     this.state = {
       bodyLength:175,
-      deskHeigth:70,
-      chairHeigth:47
+      deskHeight:70,
+      chairHeight:47
     };
   }
   onChange (event) {
-    this.setState({ bodyLength: event.target.value, deskHeigth: this.state.bodyLength / 2.5})
+    this.setState({ bodyLength: event.target.value, deskHeight: this.state.bodyLength / 2.5, chairHeight: this.state.chairHeight / 3.7})
   }
   render() {
     return (
