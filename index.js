@@ -7,7 +7,8 @@ class App extends Component {
     super();
     this.state = {
       bodyLength:175,
-      deskHeigth:0
+      deskHeigth:70,
+      chairHeigth:0
     };
   }
   onChange (event) {
